@@ -16,12 +16,10 @@ public class ContadorResultado {
             int placar = sc.nextInt();
 
             resultadoJogos[i] = placar;
-
         }
 
         for (int i = 0; i < resultadoJogos.length; i++ ){
             System.out.println("Resultado do jogo " + (i+1) + " : " + resultadoJogos[i]);
         }
-
     }
 }
