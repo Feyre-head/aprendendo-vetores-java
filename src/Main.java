@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+
+//REGISTRO NOME DE ALUNOS
 public class Main {
     public static void main(String[] args) {
 
@@ -12,7 +14,6 @@ public class Main {
         for (int i = 0; i < nomes.length ; i++) {
             System.out.println("Informe o nome do " + (1+i) + " Aluno:");
             nomes[i] = sc.nextLine();
-
         }
 
         for (int i  = 0 ; i< nomes.length ; i++){

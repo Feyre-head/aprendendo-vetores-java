@@ -1,7 +1,6 @@
 import java.util.Scanner; // importa a classe Scanner para ler dados do teclado
 
 public class PlacarJogoSimples {
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
