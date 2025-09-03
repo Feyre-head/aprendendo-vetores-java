@@ -1,6 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
+//Cadastro de 3 alunos e 3 notas + soma média  Vetor + Matriz
 public class CadastroNotasVetorMatriz {
 
     public static void main(String[] args) {
@@ -27,9 +28,11 @@ public class CadastroNotasVetorMatriz {
         }
 
         System.out.println("==========Média Alunos Cadastrados==========");
-        //Calcular Média
+
+        //Formatação de decimal
         DecimalFormat df = new DecimalFormat("#.0");
 
+        //Calcular Média
         for (int i = 0; i<3 ; i++){
             double soma = 0;
 
