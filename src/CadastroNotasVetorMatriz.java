@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class CadastroNotasVetorMatriz {
@@ -10,7 +11,7 @@ public class CadastroNotasVetorMatriz {
 
 
         for (int i = 0; i < 3; i ++){
-            System.out.println("===========NOME===========");
+            System.out.println("======Cadastro de Notas======");
             System.out.println("Digite o nome do " + (i+1) + " Aluno: ");
             nomeAluno[i] = sc.nextLine();
 
@@ -25,7 +26,9 @@ public class CadastroNotasVetorMatriz {
 
         }
 
+        System.out.println("==========Média Alunos Cadastrados==========");
         //Calcular Média
+        DecimalFormat df = new DecimalFormat("#.0");
 
         for (int i = 0; i<3 ; i++){
             double soma = 0;
@@ -35,7 +38,8 @@ public class CadastroNotasVetorMatriz {
             }
 
             double media = soma / 3;
-            System.out.println("Aluno: " + nomeAluno[i] + " - Média: " + media);
+
+            System.out.println("Aluno: " + nomeAluno[i] + " - Média: " + (df.format(media)));
         }
     }
 }
