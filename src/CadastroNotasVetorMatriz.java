@@ -21,7 +21,21 @@ public class CadastroNotasVetorMatriz {
                 notaAluno[i][j] = sc.nextDouble();
 
             }
+            sc.nextLine(); //limpa o buffer
 
+        }
+
+        //Calcular Média
+
+        for (int i = 0; i<3 ; i++){
+            double soma = 0;
+
+            for (int j =0; j < 3; j++){
+                soma += notaAluno[i][j];
+            }
+
+            double media = soma / 3;
+            System.out.println("Aluno: " + nomeAluno[i] + " - Média: " + media);
         }
     }
 }
